@@ -60,7 +60,7 @@ def maxmin_divide_conquer(numbers: Iterable[float]) -> Result:
 
 def maxmin_naive(numbers: Iterable[float]) -> Result:
     """
-    Baseline O(n) com ~2(n-1) comparações: encontra min e max varrendo uma vez.
+    Baseline O(n) com 2(n-1) comparações: encontra min e max varrendo uma vez.
     """
     it = iter(numbers)
     try:
