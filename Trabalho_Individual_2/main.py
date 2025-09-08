@@ -129,9 +129,9 @@ def rodar_testes_prontos(comparar_baseline: bool = False) -> None:
 # ---------------------------
 def menu() -> None:
     while True:
-        print("==========================================")
+        print("==============================================")
         print("  MaxMin Select (Divisão & Conquista) - Menu")
-        print("==========================================")
+        print("==============================================")
         print("[1] Rodar manualmente (D&C)")
         print("[2] Rodar manualmente (D&C) + comparar com baseline")
         print("[3] Gerar aleatórios (D&C)")
