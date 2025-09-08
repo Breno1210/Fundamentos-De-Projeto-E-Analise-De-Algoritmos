@@ -95,3 +95,54 @@ Comparações: 10 | Tempo: 0.002 ms
 
 Comparativo (Ingênuo - D&C): +2 comparações
 ```
+
+## Análise da Complexidade Assintótica (Contagem de Operações)
+
+O algoritmo **MaxMin Select** baseia-se na técnica de **Divisão e Conquista**, que reduz o número de comparações necessárias para encontrar simultaneamente o menor e o maior elemento.
+
+### Etapas analisadas
+1. **Divisão do problema**  
+   - O vetor de tamanho `n` é dividido em duas metades de tamanho `n/2`.  
+   - A divisão em si não gera comparações, apenas chamadas recursivas.
+
+2. **Resolução dos subproblemas**  
+   - Cada metade é resolvida recursivamente, resultando em:  
+     - `(min_esq, max_esq)`  
+     - `(min_dir, max_dir)`  
+   - O custo de cada metade é `T(n/2)`.
+
+3. **Combinação dos resultados**  
+   - Para obter o **mínimo global**, compara-se `min_esq` com `min_dir` (1 comparação).  
+   - Para obter o **máximo global**, compara-se `max_esq` com `max_dir` (1 comparação).  
+   - Ou seja, **2 comparações na etapa de combinação**.
+
+###  Recorrência do algoritmo
+- Para `n = 1`: nenhuma comparação.  
+- Para `n = 2`: apenas **1 comparação**.  
+- Para `n > 2`:
+```
+  T(n) = 2 * T(n/2) + 2
+```
+
+### Resolução da recorrência
+- Expansão:  
+```
+  T(n) = 2 * T(n/2) + 2 
+  T(n) = 4 * T(n/4) + 2 + 2 
+  T(n) = 8 * T(n/8) + 2 + 2 + 2
+```
+
+- Após `log₂(n)` níveis de divisão, chegamos ao caso base.  
+- Somando todos os custos de combinação:  
+```
+  T(n) = (3n/2) - 2 (quando n é potência de 2)
+```
+
+### Conclusão
+- O número total de comparações é **≈ 1,5n**, que é **menor** que os `2(n-1)` da abordagem ingênua.  
+- Assim, a complexidade temporal é:  
+```
+  T(n) ∈ O(n)
+```
+
+Portanto, o algoritmo é **linear**, mas com **menos comparações constantes** em relação à estratégia tradicional.
