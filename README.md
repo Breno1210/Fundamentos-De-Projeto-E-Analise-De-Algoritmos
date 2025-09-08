@@ -12,14 +12,37 @@ Este repositório reúne todos os **trabalhos e projetos desenvolvidos** durante
   - Análise de complexidade assintótica  
   - Fluxogramas e documentação no `README.md`  
 
-*(novos trabalhos/projetos serão adicionados conforme a disciplina avançar).*
+- **Trabalho_Individual_2**  
+  Implementação do algoritmo MaxMin Select (seleção simultânea do maior e do menor elemento) utilizando Divisão e Conquista. <br>
+  Inclui:
+  - Código fonte (`maxmin.py` e `main.py`)
+  - Menu interativo para execução manual, aleatória e testes prontos
+  - Análise de complexidade por contagem de operações
+  - Análise de complexidade pelo Teorema Mestre
+  - Fluxogramas e Documentação completa no `README.md`
+
+- **Trabalho_Individual_3**  
+  Em Breve... <br>
+  Inclui:
+  - Em Breve...
+
+- **Trabalho_Em_Grupo_1**  
+  Em Breve... <br>
+  Inclui:
+  - Em Breve...
+
+- **Trabalho_Em_Grupo_2**  
+  Em Breve... <br>
+  Inclui:
+  - Em Breve...
 
 ## Conteúdos Abordados
 
 - Análise de complexidade **ciclomática**  
-- Análise de complexidade **assintótica**  
+- Análise de complexidade **assintótica** 
+- Aplicação do **Teorema Mestre** 
 - Estruturas de decisão e fluxogramas  
-- Implementação de algoritmos em Python  
+- Implementação de algoritmos em **Python**  
 - Comparação de desempenho e casos de teste  
 
 ##  Tecnologias Utilizadas
