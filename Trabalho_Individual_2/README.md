@@ -146,3 +146,57 @@ O algoritmo **MaxMin Select** baseia-se na técnica de **Divisão e Conquista**,
 ```
 
 Portanto, o algoritmo é **linear**, mas com **menos comparações constantes** em relação à estratégia tradicional.
+
+## Análise da Complexidade Assintótica (Teorema Mestre)
+
+A recorrência do algoritmo **MaxMin Select** pode ser expressa como:
+
+```
+T(n) = 2T(n/2) + O(1)
+```
+
+### 1. Identificação dos parâmetros
+
+Na forma geral:
+
+```
+T(n) = a ⋅ T(n/b) + f(n)
+```
+
+Temos:
+
+```
+a = 2   
+b = 2   
+f(n) = O(1)  
+```
+
+### 2. Cálculo de log\_b a
+
+```
+log_b a = log_2 2 = 1
+```
+
+Portanto, `p = 1`.
+
+### 3. Caso do Teorema Mestre
+
+Comparando `f(n) = O(1)` com `n^p = n^1 = n`:
+
+```
+f(n) = O(n^c) com c = 0
+```
+
+Como `c < p (0 < 1)`, a recorrência se enquadra no **Caso 1 do Teorema Mestre**.
+
+### 4. Solução assintótica
+
+Pelo **Caso 1 do Teorema Mestre**:
+
+```
+T(n) = Θ(n^p) = Θ(n)
+```
+
+### Conclusão
+
+O algoritmo **MaxMin Select** possui complexidade assintótica **linear**, `T(n) ∈ Θ(n)`, confirmando que ele é eficiente para resolver o problema de encontrar simultaneamente o menor e o maior elemento, com custo assintótico equivalente à abordagem ingênua, mas com **menos comparações constantes**.
