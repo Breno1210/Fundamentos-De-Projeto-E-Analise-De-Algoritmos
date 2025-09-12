@@ -200,3 +200,13 @@ T(n) = Θ(n^p) = Θ(n)
 ### Conclusão
 
 O algoritmo **MaxMin Select** possui complexidade assintótica **linear**, `T(n) ∈ Θ(n)`, confirmando que ele é eficiente para resolver o problema de encontrar simultaneamente o menor e o maior elemento, com custo assintótico equivalente à abordagem ingênua, mas com **menos comparações constantes**.
+
+## Diagrama de árvore de recursão
+
+<p align="center">
+  <img src="img/MaxMinSelect_RecursionTree.png" alt="Diagrama de árvore de recursão" width="650"/>
+</p>
+
+### Explicação
+
+O problema original (n=8) é dividido recursivamente em subproblemas de tamanho n/4 e depois n/2, até chegar às folhas (n=2), onde cada par é resolvido com 1 comparação. Nos nós internos ocorre a combinação dos resultados, exigindo 2 comparações (uma para o menor e outra para o maior). Assim, temos 4 comparações nas folhas, 4 nos nós intermediários e 2 na raiz, totalizando 10 comparações, em concordância com a fórmula 3n/2 - 2.
