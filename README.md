@@ -22,9 +22,18 @@ Este repositório reúne todos os **trabalhos e projetos desenvolvidos** durante
   - Fluxogramas e Documentação completa no `README.md`
 
 - **Trabalho_Individual_3**  
-  Em Breve... <br>
+  Implementação do **Caminho Hamiltoniano** por **backtracking** em grafos **dirigidos** e **não dirigidos**. <br>
   Inclui:
-  - Em Breve...
+  - Código fonte (`hamiltonian.py` e `main.py`)
+  - Menu interativo com exemplos prontos e entrada de grafo personalizada
+  - Modo **verbose** (passo a passo) para visualizar o backtracking
+  - Documentação no `README.md` (explicação linha a linha do código)
+  - Relatório técnico:
+    - Classes de complexidade (**P**, **NP**, **NP-Completo**, **NP-Difícil**) e relação com o **TSP**
+    - Análise de complexidade temporal (**O(n!)** no pior caso) com contagem da árvore de busca
+    - Aplicabilidade do **Teorema Mestre** (não se aplica ao backtracking deste problema)
+    - Casos **melhor**, **médio** e **pior** com impacto no desempenho
+  - Instruções de execução locais (`python main.py`)
 
 - **Trabalho_Em_Grupo_1**  
   Em Breve... <br>
